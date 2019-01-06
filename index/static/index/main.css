@@ -1,0 +1,120 @@
+/* Background styles */
+html {
+    min-height: 100%;
+    display: flex;
+}
+body {
+    background-color: rgb(119,221,170);
+    flex: 1;
+    margin: 0;
+    display: flex;
+    color: black;    
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Adjust container based on screen size */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex: 1;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .container {
+        flex: 1;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Header container */
+.header {
+    border-bottom: 1px solid black;
+    font-size: 30pt;
+}
+/* Icon container styles */
+.iconContainer {
+    height: 50px;
+    width: 100%;
+}
+ul {
+    display: block;
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+}
+li {
+    display: inline-block;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: color 0.25s linear;
+    -webkit-transition: color 0.25s linear;
+    -moz-transition: color 0.25s linear;
+}
+.link:hover {
+    text-decoration: none;
+    color: rgb(150,150,150);
+}
+#circle {
+    text-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+}
+#icon {
+    color: white
+}
+
+/* Content container */
+.bodyContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* Content line container */
+.line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.lineHead {
+    position: relative;
+    width: 100px;
+    min-width: 100px;
+    margin-right: 20px;
+    align-items: center;
+} 
+.lineHead span {
+    float: right
+}
+.lineContent {
+    display: block;
+}
+b {
+    margin-right: 5px;
+}
+.lineContent a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+}
+.lineContent a:hover {
+    text-decoration: none;
+    color: #000080;
+    border-bottom-color: #000080
+}
