@@ -27,69 +27,79 @@
     <div class="container">
         <!-- Title
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <div class="headContainer">
-            <a class="header">Holden Maudlin</a>
-        <!-- Icon Bar
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <ul class="iconContainer">
-                <a href="https://www.linkedin.com/in/holden-maudlin/" target="_blank" class="link">
-                    <li class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x" id="circle"></i>
-                        <i class="fa fa-linkedin fa-stack-1x" id="icon"></i>
-                    </li>
-                </a>
-                <a href="https://github.com/HoldenMaudlin" target="_blank" class="link">
-                    <li class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x" id="circle"></i>
-                        <i class="fa fa-github fa-stack-1x" id="icon"></i>
-                    </li>
-                </a>
-                <a href="https://github.com/HoldenMaudlin" target="_blank" class="link">
-                    <li class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x" id="circle"></i>
-                        <i class="fa fa-file-o fa-stack-1x" id="icon"></i>
-                    </li>
-                </a>
-                <a href="https://www.facebook.com/holden.maudlin" target="_blank" class="link">
-                    <li class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x" id="circle"></i>
-                        <i class="fa fa-facebook fa-stack-1x" id="icon"></i>
-                    </li>
-                </a>
-                <a href="https://www.facebook.com/holden.maudlin" target="_blank" class="link">
-                    <li class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x" id="circle"></i>
-                        <i class="fa fa-instagram fa-stack-1x" id="icon"></i>
-                    </li>
-                </a>
-            </ul>
-        </div>
-        <!-- Content
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <div class="bodyContainer">
-            <div class="line">
-                <div class="lineHead">
-                    <span><b>About: </b></span> 
+        <div class="contentContainer">
+            <div class="headContainer">
+                <div class="imageContainer">
+                    <img class="image" src="{% static 'media/holdenmaudlinsquare.png'%}"/>
                 </div>
-                <span>Hi, I'm Holden! I am an aspiring Backend Software Developer studying Business and Computer Science at the University of Southern California. 
-                    I wrote my first line of code in July 2018, and I haven't looked back.
-                </span>
-            </div>
-            <div class="line">
-                <div class="lineHead">
-                    <span><b>Projects: </b></span> 
-                </div>
-                <div class="lineContent">
-                    <p style="margin-top: 0px;"><a href="https://github.com/HoldenMaudlin/FIRE-Hub">FIRE Hub app</a> (Nov. 2018 – Jan. 2019)</p>
-                    <p><a href="http://www.holdenmaudlin.com">Maud Properites website</a> (Dec. 2018)</p>
-                    <p style="margin-bottom: 0px;"> <a href="https://github.com/HoldenMaudlin/Hello-World">Hello World!</a> (Aug. 2018)</p>
+                <div class="titleContainer">
+                    <div class="header">
+                        <a>Holden Maudlin</a>
+                    </div>
+                    <!-- Icon Bar
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <ul class="iconContainer">
+                        <a title="Linked In" href="https://www.linkedin.com/in/holden-maudlin/" target="_blank" class="link">
+                            <li class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x" id="circle"></i>
+                                <i class="fa fa-linkedin fa-stack-1x" id="icon"></i>
+                            </li>
+                        </a>
+                        <a title="GitHub" href="https://github.com/HoldenMaudlin" target="_blank" class="link">
+                            <li class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x" id="circle"></i>
+                                <i class="fa fa-github fa-stack-1x" id="icon"></i>
+                            </li>
+                        </a>
+                        <a title="Resume" href="{% static 'media/MaudlinHolden2019.pdf'%}" class="link">
+                            <li class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x" id="circle"></i>
+                                <i class="fa fa-file-o fa-stack-1x" id="icon"></i>
+                            </li>
+                        </a>
+                        <a title="Facebook" href="https://www.facebook.com/holden.maudlin" target="_blank" class="link">
+                            <li class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x" id="circle"></i>
+                                <i class="fa fa-facebook fa-stack-1x" id="icon"></i>
+                            </li>
+                        </a>
+                        <a title="Instagram" href="https://www.instagram.com/holden.maudlin/" target="_blank" class="link">
+                            <li class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x" id="circle"></i>
+                                <i class="fa fa-instagram fa-stack-1x" id="icon"></i>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
             </div>
-            <div class="line">
-                <div class="lineHead">
-                    <span><b>Contact: </b></span> 
+            <!-- Content
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="bodyContainer">
+                <div class="line">
+                    <div class="lineHead">
+                        <span><b>About: </b></span> 
+                    </div>
+                    <span>
+                        Hi, I'm Holden! I am an aspiring Backend Software Developer studying Business and Computer Science at the University of Southern California. 
+                        I wrote my first line of code in June of 2018, and I haven't looked back.
+                    </span>
                 </div>
-                <span>holden.maudlin@gmail.com</span>
+                <div class="line">
+                    <div class="lineHead">
+                        <span><b>Projects: </b></span> 
+                    </div>
+                    <div class="lineContent">
+                        <p style="margin-top: 0px;"><a href="firehub">FIRE Hub app</a> (Nov. 2018 – Jan. 2019)</p>
+                        <p><a href="http://www.holdenmaudlin.com">Maud Properites website</a> (Dec. 2018)</p>
+                        <p style="margin-bottom: 0px;"> <a href="https://github.com/HoldenMaudlin/Hello-World">Hello World!</a> (Aug. 2018)</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="lineHead">
+                        <span><b>Contact: </b></span> 
+                    </div>
+                    <span>holden.maudlin@gmail.com</span>
+                </div>
             </div>
         </div>
     </div>
