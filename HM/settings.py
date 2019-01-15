@@ -25,7 +25,7 @@ SECRET_KEY = 'cjdp8yzcpr2zga$4x+phg)!nfoq%k06kwu&g!)bt8efshc%-j4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.holdenmaudlin.com']
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 
