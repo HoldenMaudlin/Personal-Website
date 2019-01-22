@@ -25,12 +25,13 @@ SECRET_KEY = 'cjdp8yzcpr2zga$4x+phg)!nfoq%k06kwu&g!)bt8efshc%-j4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.holdenmaudlin.com']
+ALLOWED_HOSTS = ['www.holdenmaudlin.com', '127.0.0.1' ,]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'sudokusource.apps.SudokusourceConfig',
     'firehub.apps.FirehubConfig',
     'index.apps.IndexConfig',
     'django.contrib.admin',
@@ -122,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR),
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

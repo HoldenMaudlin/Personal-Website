@@ -28,7 +28,7 @@
         <!-- Title
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="head-container">
-            <img class="image" src="{% static 'media/flamemint.png'%}"/>
+            <img class="fire" src="{% static 'media/flamemint.png'%}"/>
             <h1>FIRE Hub</h1>
         </div>
         <h3>Visualize your path to retirement!</h3>
@@ -66,11 +66,16 @@
                 </span>
             </div>
         </div>
-        <a style="margin-top: 30px;" href="https://itunes.apple.com/us/app/fire-hub/id1448963860?ls=1&mt=8">
-            <object type="image/svg+xml" data="../../static/media/AppStore.svg">
-                Your browser does not support SVG
-            </object>
-        </a>
+        <div class="store-container">
+            <a style="display: inline-block" href="https://itunes.apple.com/us/app/fire-hub/id1448963860?ls=1&mt=8">
+                <object type="image/svg+xml" data="../../static/media/AppStore.svg">
+                    Download on the App Store!
+                </object>
+            </a>
+            <a href='https://play.google.com/store/apps/details?id=com.holdenmaudlin.firehub&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img class="google-play" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+            </a>
+        </div>
         <p><a href="{% static 'media/FireHubPrivacyPolicy.pdf'%}"}>Privacy Policy</a></p>
     </div>
 </body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!-- Meta Data 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FIRE Hub</title>
+    <meta name="author" content="Holden Maudlin">
+    <meta name="title" content="Sudoku Source">
+    <meta name="description" content="Sudoku Source website.">
+    <meta name="keyword" content="Sudoku, Solver, Sudoku Solver, Source, Sudoku Source, Puzzle,  Free, Free Sudoku Solver,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Styles 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'sudokusource/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'media/flamemint32x32.png'%}">
+    <script src="main.js"></script>
+    <!-- Icons 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<!-- Start of Main Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<body>
+    <div class="container">
+        <!-- Title
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="head-container">
+            <img class="icon" src="{% static 'media/sudokuicon.png'%}"/>
+            <h1>Sudoku Source</h1>
+        </div>
+        <h3>Free and Fast Sudoku Puzzle Solver App</h3>
+        <div class="store-container">
+            <a style="display: inline-block" href="https://itunes.apple.com/us/app/sudoku-source/id1449890453?ls=1&mt=8">
+                <object type="image/svg+xml" data="../../static/media/AppStore.svg">
+                    Your browser does not support SVG
+                </object>
+            </a>
+            <a href='https://play.google.com/store/apps/details?id=com.holdenmaudlin.sudoku_source&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img class="google-play" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+            </a>
+        </div>
+        <p><a href="{% static 'media/SudokuSourcePrivacyPolicy.pdf'%}"}>Privacy Policy</a></p>
+    </div>
+</body>
+<!-- End of Main Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+</html>

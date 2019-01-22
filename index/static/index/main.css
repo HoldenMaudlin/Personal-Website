@@ -12,6 +12,19 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.google-play {
+    width: 150px;
+    padding: 0px;
+    margin-bottom: -8px;
+}
+
+.store-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 /* Adjust container based on screen size */
 @media only screen and (max-width: 680px) {
     .container {

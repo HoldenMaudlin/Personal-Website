@@ -4,7 +4,7 @@ html {
     display: flex;
 }
 body {
-    background-color: #111111;
+    background-color: #eeeeee;
     flex: 1;
     margin: 0;
     display: flex;
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    color: #eeeeee;
+    color: rgb(0, 76, 219);
     font-weight: 100;
     font-size: 38pt;
     margin: 0px;
@@ -21,32 +21,30 @@ h1 {
 }
 
 h3, p a, span a{
-    color: #eeeeee;
+    color: black;
     margin-top: 15px;
 }
 
 span a, p a {
+    color: black;
     text-decoration: none;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid black;
     transition: all 0.25s linear;
     -webkit-transition: all 0.25s linear;
     -moz-transition: all 0.25s linear;
 }
 span a:hover, p a:hover {
     text-decoration: none;
-    color: rgb(28,207,154);
-    border-bottom-color: rgb(28,207,154);
+    color: rgb(0, 76, 219);
+    border-bottom-color: rgb(0, 76, 219);
 }
 
 object {
     pointer-events: none;
 }
 
-/* Images */
-.fire {
-    width: 50px;
-    height: 50px;
-}
+
+
 .google-play {
     width: 150px;
     padding: 0px;
@@ -55,9 +53,6 @@ object {
 
 .store-container {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
 }
 
 /* Adjust container based on screen size */
@@ -71,7 +66,16 @@ object {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+    }
+    .head-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        width: 0px;
+        height: 0px;
     }
 }
 @media only screen and (min-width: 680px) {
@@ -85,19 +89,22 @@ object {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
     }
-}
-
-.head-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    .head-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* Content line container */
 .line {
-    color: #eeeeee;
+    color: black;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
