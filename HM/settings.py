@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'cjdp8yzcpr2zga$4x+phg)!nfoq%k06kwu&g!)bt8efshc%-j4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.holdenmaudlin.com', '127.0.0.1' ,]
 
